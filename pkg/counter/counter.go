@@ -75,6 +75,6 @@ func UserKeyWordsCount(wordCount map[string]*int, userKeyWords []string) string 
 		result.WriteString(str + ":" + " " + strconv.Itoa(*wordCount[str]) + "\n")
 		total += *wordCount[str]
 	}
-	result.WriteString("всего: " + strconv.Itoa(total))
+	result.WriteString("total: " + strconv.Itoa(total))
 	return result.String()
 }
