@@ -26,7 +26,7 @@ func main() {
 		log.Fatalf("Failed to find current directory: %v", err)
 	}
 	textFileName := "input.txt"
-	textFilePath := filepath.Join(currentDir, "../data/input.txt")
+	textFilePath := filepath.Join(currentDir, "/data/input.txt")
 
 	file, err := os.Open(textFilePath)
 	if err != nil {
